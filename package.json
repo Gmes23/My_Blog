@@ -1,7 +1,7 @@
 {
-  "name": "blog and portfolio",
+  "name": "gerardo",
   "version": "1.0.0",
-  "description": "Gerardo Mestanza - Blog adn Portfolio",
+  "description": "Gerardo Mestanza - Blog and Portfolio",
   "main": "index.js",
   "repository": "https://github.com/Gmes23/My_Blog.git",
   "scripts": {
