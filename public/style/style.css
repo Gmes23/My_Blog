@@ -1,0 +1,160 @@
+a, a:hover, a:active, a:visited {
+    text-decoration: none !important;
+    cursor: pointer;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+form a {
+    margin-left: 5px;
+}
+
+/*Fonts and Colors */
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*font-family: proxima-nova, sans-serif;*/
+
+/*global classes*/
+.no-margin {
+     margin: 0px;
+}
+
+.span-line-small {
+    position: absolute;
+    width: 60px;
+    border-bottom: 4px solid red;
+}
+
+.span-line-on-text {
+    position: absolute;
+    border-bottom: 2px solid red;
+    width: 30px;
+    left: -35px;
+    top: 9px;
+}
+
+/*Homepage*/
+
+.navbar-gm {
+    position: relative;
+    width: 75vw;
+    height: 13vh;
+    background-color: blue;
+    padding-left: 5vw;
+}
+
+.gm-decription-header {
+    margin-left: 5vw;
+    font-size: 1.2em;
+    color: white;
+}
+
+.billboard-mainpage {
+    position: relative;
+    width: 75vw;
+    height: 74vh;
+    padding-top: 10vh;
+    padding-left: 15vw;
+    background-color: purple;
+}
+
+.billboard-text {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: white;
+    margin-top: 1.4em;
+    line-height: 1.4em;
+}
+
+.billboard-link-to {
+    position: absolute;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: white;
+    bottom: 150px;
+}
+
+.logo-gm-container {
+    position: absolute;
+    bottom: 0px;
+    width: 60px;
+}
+
+.logo-gm {
+    font-family: 'Bungee Inline', cursive;
+    font-weight: 500;
+}
+
+.logo-description {
+    position: absolute;
+    bottom: 0px;
+    left: 10vw;
+}
+
+.footer-mainpage {
+    position: absolute;
+    bottom: 0px;
+    width: 75vw;
+    height: 13vh;
+    padding-left: 5vw;
+    background-color: black;
+    display: flex;
+}
+
+.social-links {
+    position: relative;
+    top: 1vh;
+    height: 30px;
+}
+.social-icons {
+    color: white;
+}
+
+.social-icons, ul, li {
+    display: inline;
+    margin: 0px;
+}
+
+.social-icons, ul, li, i {
+    margin-left: 10px;
+}
+
+.email-container {
+    position: relative;
+    top: 1vh;
+    height: 20px;
+}
+
+.email-gm {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.right-container-mainpage {
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    background-color: red;
+    right: 0px;
+    top: 0px;
+}
+
+.right-container-top-section {
+    height: 50vh;
+    width: 100%;
+    background-color: yellow;
+}
+
+.right-container-bottom-section {
+    height: 50vh;
+    width: 100%;
+    background-color: pink;
+}
