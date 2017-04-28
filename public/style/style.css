@@ -1,3 +1,27 @@
+/*Fonts and Colors */
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*font-family: proxima-nova, sans-serif;*/
+
+@font-face {
+  font-family: 'Miso';
+  src: url('../fonts/Miso.otf');
+}
+
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('../fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+  font-family: 'HelloStockholm';
+  src: url('../fonts/HelloStockholm-Alt.ttf');
+}
+
+/*global styles*/
+
+
 a, a:hover, a:active, a:visited {
     text-decoration: none !important;
     cursor: pointer;
@@ -12,15 +36,14 @@ form a {
     margin-left: 5px;
 }
 
-/*Fonts and Colors */
-@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-/*font-family: proxima-nova, sans-serif;*/
 
 /*global classes*/
 .no-margin {
      margin: 0px;
+}
+
+.center-text {
+    text-align: center;
 }
 
 .span-line-small {
@@ -47,10 +70,13 @@ form a {
     padding-left: 5vw;
 }
 
-.gm-decription-header {
+.gm-description-header {
     margin-left: 5vw;
-    font-size: 1.2em;
     color: white;
+    font-family: 'Roboto-Black';
+    font-size: 1em;
+    font-size: 500;
+    margin-bottom: .5em;
 }
 
 .billboard-mainpage {
@@ -59,7 +85,7 @@ form a {
     height: 74vh;
     padding-top: 10vh;
     padding-left: 15vw;
-    background-color: purple;
+    background-color: black;
 }
 
 .billboard-text {
@@ -87,8 +113,9 @@ form a {
 }
 
 .logo-gm {
-    font-family: 'Bungee Inline', cursive;
-    font-weight: 500;
+    font-family: acier-bat-noir, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .logo-description {
@@ -133,28 +160,71 @@ form a {
 
 .email-gm {
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
+    font-family: 'Roboto-Black';
+    font-size: .8em;
+    font-size: 500;
 }
 
 .right-container-mainpage {
     position: absolute;
     width: 25vw;
     height: 100vh;
-    background-color: red;
     right: 0px;
     top: 0px;
+    border-left: 1px gray solid;
+    background-color: rgba(126, 127, 127, 0.12);
 }
 
 .right-container-top-section {
+    position: relative;
     height: 50vh;
     width: 100%;
-    background-color: yellow;
+    border-bottom: 1px gray solid;
+}
+
+.title-section-right-container {
+    height: 13vh;
+    padding-top: 5vh;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Miso';
+    font-size: 3.5em;
+}
+
+.top-section-actions {
+    height: 37vh;
+    text-align: center;
+}
+
+.image-holder {
+    position: absolute;
+    left: 5vw;
+    width: 60%;
+    height: 50%;
+}
+
+.blog-pictures {
+    width: 100%;
+    height: 100%;
+}
+
+.blog-name {
+    position: absolute;
+    width: 100%;
+    bottom: 1vh;
+    text-align: center;
+    color: white;
 }
 
 .right-container-bottom-section {
+    position: relative;
     height: 50vh;
     width: 100%;
-    background-color: pink;
+    padding: 1%;
 }
+
+.bottom-right-container-title {
+    font-family: 'Miso';
+    font-size: 3.5em;
+}
+
