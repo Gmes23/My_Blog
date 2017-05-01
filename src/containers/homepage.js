@@ -4,9 +4,12 @@ import { fetchPosts } from '../actions/index';
 import { Link } from 'react-router';
 
 export default class HomePage extends Component {
-
+    
     render() {
+        var blogPostImages = ['first', 'seacond'];
+
         return (
+      
             <div>
                 <div className="navbar-gm">
                     <div className="logo-gm-container">
@@ -24,7 +27,13 @@ export default class HomePage extends Component {
                                 <img className="blog-pictures" src="./img/placeholder.jpg" />
                             </div>
                             <div className="blog-name">
-                                <p> Basic_Mathematical_Operations.js</p>
+                                <div className="left-arrow-action arrow-icons">
+                                    <i className="fa fa-arrow-circle-o-left fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <div className="right-arrow-action arrow-icons">
+                                    <i className="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i>
+                                </div>
+                                <p> Basic Mathematical Operations</p>
                                 <p> Javascript </p>
                             </div>
                         </div>
@@ -32,10 +41,9 @@ export default class HomePage extends Component {
                     <div className="right-container-bottom-section">
                         <div className="bottom-section-actions">
                             <h1 className="center-text bottom-right-container-title"> Works </h1>
-                                 <div className="image-holder">
+                             <div className="image-holder">
                                 <img className="blog-pictures" src="./img/placeholder.jpg" />
-                            </div>
-                          
+                             </div>
                         </div>
                     </div>
                 </div>
