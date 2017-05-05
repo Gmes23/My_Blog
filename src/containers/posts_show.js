@@ -16,39 +16,35 @@ class PostsShow extends Component {
         const { post } = this.props;
 
         if (post.length > 0){
-        var re = /.*BlogPost\s+(.*)\s+EndBlog.*/;
-        var blogDescription = post.match(re)
-            console.log(blogDescription);
-            var markdown = blogDescription;
-        
+            var blogDescription = post.match(/BlogPost\s*([^]*)\s*EndBlog/)[1];
+            var bestAnswers = post.match(/bestSolutions\s*([^]*)\s*endSolutions/)[1];
+            var title = this.props.params.id.replace(/_/g, " ");
         }
-        // var markdown = 'function here() { return this } if (!wrwer){wefwef} if (!post) { retrun }';
-        // console.log(post);
-
+      
         if (!post) {
             return <div> loading ... </div>;
         }
 
         return (
             <div>
-                <div className="fullpage-left-container">
+                <div className="fullpage-right-container">
                     <pre className="prettyprint lang-js code-Blocks">
-                        {markdown}
+                        {bestAnswers}
                     </pre>
                 </div>
-                <div className="fullpage-right-container">
+                <div className="fullpage-left-container">
                     <div className="blog-navigation-bar">
                         <Link className="back-button-gm" to="/">
+                        <i className="fa fa-long-arrow-left back-arrow-icon" aria-hidden="true"></i>
                             Back
-                        <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </Link>
                     </div>
                     <div className="blog-title-container">
-                        <h1> Eloquent Javascript </h1>
+                        <h1> {title} </h1>
                         <h4> by Gerardo Mestanza </h4>
                     </div>
                     <div className="blog-text-container">
-                        <p>{post}</p>
+                        <p>{blogDescription}</p>
                     </div>
                 </div>
             </div>

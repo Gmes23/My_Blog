@@ -255,19 +255,24 @@ pre {
 /*Blog Page Initial blog page look and mobile look*/
 
 /*fulpage should be moved to global classes*/
-.fullpage-left-container {
-    position: absolute;
-    left: 0px;
-    width: 38vw;
-    height: 100vh;
-    background-color: #2d2d2d;
-}
-
 .fullpage-right-container {
     position: absolute;
     right: 0px;
+    width: 38vw;
+    height: 100vh;
+    background-color: #2d2d2d;
+    padding-top: 5%;
+    padding-left: 1.5vw;
+}
+
+.fullpage-left-container {
+    position: absolute;
+    left: 0px;
     width: 62vw;
-    /*height: 100vh;*/
+}
+
+.back-arrow-icon {
+    margin-right: 5px;
 }
 
 .blog-navigation-bar {
@@ -277,7 +282,7 @@ pre {
 }
 
 .back-button-gm {
-    float: right;
+    float: left;
     margin: 1.5%;
     font-size: 1.6em;
     font-family: Roboto-Black;
